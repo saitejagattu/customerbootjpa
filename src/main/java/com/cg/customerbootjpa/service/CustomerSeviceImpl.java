@@ -25,7 +25,7 @@ public class CustomerSeviceImpl implements ICustomerService{
 		
 		
 	}
-
+	@Transactional
 	@Override
 	public Customer updateName(long id, String name) {
 		Customer customer = repository.findById(id);

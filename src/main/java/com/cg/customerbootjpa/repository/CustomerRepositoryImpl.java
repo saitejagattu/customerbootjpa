@@ -25,7 +25,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository{
 	@Override
 	public Customer update(Customer customer) {
 		
-		return entityManager.merge(null);
+		return entityManager.merge(customer);
 	}
 	
 	@Override
