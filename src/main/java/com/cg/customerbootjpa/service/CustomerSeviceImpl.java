@@ -30,7 +30,8 @@ public class CustomerSeviceImpl implements ICustomerService{
 	public Customer updateName(long id, String name) {
 		Customer customer = repository.findById(id);
 		customer.setName(name);
-		return repository.update(customer);
+		customer = repository.update(customer);
+		return customer;
 		
 	}
 

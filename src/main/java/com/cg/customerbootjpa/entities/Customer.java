@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
-
+@Table(name="customers")
 @Entity
 public class Customer {
 	

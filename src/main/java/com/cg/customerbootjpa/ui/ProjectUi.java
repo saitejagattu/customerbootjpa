@@ -22,6 +22,15 @@ public class ProjectUi {
 			service.register(c1);
 	
 		}
+		public Customer add(long id,String name){
+			Customer customer = new Customer(id, name);
+			customer = service.register(customer);
+			return customer;
+		}
+		public Customer update(Long id, String newName)
+		{
+			return service.updateName(id, newName);
+		}
 		
 		
 
